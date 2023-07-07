@@ -28,3 +28,4 @@ resource "null_resource" "cluster" {
   provisioner "local-exec" {
     command = "ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -u ubuntu -b -i '${element(aws_instance.servers.*.public_ip, count.index)},'  nginx-playbook-localexec.yml"
   }
+}

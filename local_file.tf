@@ -6,5 +6,5 @@ resource "local_file" "hosts_cfg" {
       server3 = aws_instance.web-3.public_ip
     }
   )
-  filename = "/root/terraformsingleinstance/hosts.cfg"
+  filename = "hosts.cfg"
 }

@@ -79,15 +79,15 @@ pipeline {
                     sh 'ansible-playbook -i hosts.cfg nginx-playbook-remote.yml --check || exit 0'
                 }
         }
-        // stage('Ansible Apply Playbook') {
-        //         when {
-        //             expression {
-        //                 params.ACTION == 'DEPLOY'
-        //             }
-        //         }
-        //     steps {
-        //             sh 'ansible-playbook -i hosts.cfg nginx-playbook-remote.yml'
-        //         }
-        // }
+        stage('Ansible Apply Playbook') {
+                when {
+                    expression {
+                        params.ACTION == 'DEPLOY'
+                    }
+                }
+            steps {
+                    sh 'ansible-playbook -i hosts.cfg nginx-playbook-remote.yml'
+                }
+        }
     }
 }

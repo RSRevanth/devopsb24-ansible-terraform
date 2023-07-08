@@ -88,6 +88,6 @@ pipeline {
         //     steps {
         //             sh 'ansible-playbook -i hosts.cfg nginx-playbook-remote.yml'
         //         }
-        }
+        // }
     }
 }

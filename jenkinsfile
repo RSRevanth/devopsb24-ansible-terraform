@@ -36,10 +36,12 @@ pipeline {
         }
         stage('Terraform Plan') {
             when {
+                anyof {
                     expression {
                         params.ACTION == 'DEPLOY'
                     }
                 }
+            }
             steps {
                     sh 'terraform init'
                     sh 'terraform validate'

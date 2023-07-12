@@ -36,11 +36,9 @@ pipeline {
         }
         stage('Terraform Plan') {
             when {
-                anyof {
                     expression {
                         params.ACTION == 'DEPLOY'
                     }
-                }
             }
         }
             steps {

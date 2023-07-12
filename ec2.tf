@@ -15,7 +15,7 @@ resource "aws_instance" "web-1" {
   user_data = <<-EOF
         #!/bin/bash
         sudo apt-get update
-        echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDp13RaAdC9OiSBrbbpMHWKXeMwMB/gSQNMyR+8xLMYnp+Q6Ad6tio6Psb4xoLvRJBwIebJ20ecqWrP1852eLvQaeRGRBYxw3hcUJaj+PBItsRYIRyQoXyOWSxy+RoRl4mURa982+bZ4q0uted7RFYoFOGqyWxOHhh/Cu3D0sOO0z2ACbpcCozIyUB4W0AueLcfmk+oMHOb33gfX150qs9QhASZ8yEvR7NcjoEp/kTQP5RX/oZEIuSQ8Z/euSx8L9poXBb6xQ9uNKj7wmea3NaIELCIrkQjKFVhHbSqERP2WdXGP0hmcwmUcKeuKEnuojIUiddP0z+EZL+8rrXMMUU7kCbDVa8ipE1YB6UB6K0XIOe4HrwWet/2UqPCyXArwhRAE9/UOgdl3H+f+VWDvzsIrNqm09CIB1wJnM0PmoYvYQZtV/b2I5UBg0ACMTFphPwNU9smT4bZcPI+Gw4kzAITV1BNl5+vK7vFySJYWjKKaypiz7DP7dflshet0WmZd+k= root@ip-172-31-28-151' >>   /home/ubuntu/.ssh/authorized_keys
+        echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8Q8qe81qeUu9Sqc8v+OsQAdFh2a2naw8Rua9pR/+rHVlflj6ipY2FssPhQFjA65ltXQ24DC+yT75UpxfjcWWiLpzIC3H3KOzE8BeskFhb3F3O/lZEfSejKBOUoYMcD/BbmsixoUbhhj3QfXvDsvn3TNFRM6Kvt6ISB1FT7GLY/DlwVLqSUM0db9JWiYY0ObrS3AlD8dI+P7QwkbK6JGnDIpmA2Eh/xRvxojp/vPC3PCHdOGgXa7JxdShHpJGrQXT57ItGAi4Ij2RQjSXhIyVrPylkaeXnRssYYyHKwrRuxZv/isGz8MXLvxNqdlrznKnEtzI9bu84VdwFAeyRns0cUC2MDNWzVqIhAj1HCJ9qjQ99R0btpqo/fE1EHV11j8tCKDiBJoG/lDiaKgtcwwY+8IntdMrgjbqWqPuuHOl6KLu2gJVkyoZzQN0dgNEy92lTTIoZ2n5QmCWJYIL5RBm8rWYjwZdLDlI8EMZ5O5sB0egLAlXDJNNjK4qanq/q9qc= jenkins@ip-172-31-95-160' >>   /home/ubuntu/.ssh/authorized_keys
         EOF
 }
 
@@ -38,7 +38,7 @@ resource "aws_instance" "web-2" {
   user_data = <<-EOF
         #!/bin/bash
         sudo apt-get update
-        echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDp13RaAdC9OiSBrbbpMHWKXeMwMB/gSQNMyR+8xLMYnp+Q6Ad6tio6Psb4xoLvRJBwIebJ20ecqWrP1852eLvQaeRGRBYxw3hcUJaj+PBItsRYIRyQoXyOWSxy+RoRl4mURa982+bZ4q0uted7RFYoFOGqyWxOHhh/Cu3D0sOO0z2ACbpcCozIyUB4W0AueLcfmk+oMHOb33gfX150qs9QhASZ8yEvR7NcjoEp/kTQP5RX/oZEIuSQ8Z/euSx8L9poXBb6xQ9uNKj7wmea3NaIELCIrkQjKFVhHbSqERP2WdXGP0hmcwmUcKeuKEnuojIUiddP0z+EZL+8rrXMMUU7kCbDVa8ipE1YB6UB6K0XIOe4HrwWet/2UqPCyXArwhRAE9/UOgdl3H+f+VWDvzsIrNqm09CIB1wJnM0PmoYvYQZtV/b2I5UBg0ACMTFphPwNU9smT4bZcPI+Gw4kzAITV1BNl5+vK7vFySJYWjKKaypiz7DP7dflshet0WmZd+k= root@ip-172-31-28-151' >>   /home/ubuntu/.ssh/authorized_keys
+        echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8Q8qe81qeUu9Sqc8v+OsQAdFh2a2naw8Rua9pR/+rHVlflj6ipY2FssPhQFjA65ltXQ24DC+yT75UpxfjcWWiLpzIC3H3KOzE8BeskFhb3F3O/lZEfSejKBOUoYMcD/BbmsixoUbhhj3QfXvDsvn3TNFRM6Kvt6ISB1FT7GLY/DlwVLqSUM0db9JWiYY0ObrS3AlD8dI+P7QwkbK6JGnDIpmA2Eh/xRvxojp/vPC3PCHdOGgXa7JxdShHpJGrQXT57ItGAi4Ij2RQjSXhIyVrPylkaeXnRssYYyHKwrRuxZv/isGz8MXLvxNqdlrznKnEtzI9bu84VdwFAeyRns0cUC2MDNWzVqIhAj1HCJ9qjQ99R0btpqo/fE1EHV11j8tCKDiBJoG/lDiaKgtcwwY+8IntdMrgjbqWqPuuHOl6KLu2gJVkyoZzQN0dgNEy92lTTIoZ2n5QmCWJYIL5RBm8rWYjwZdLDlI8EMZ5O5sB0egLAlXDJNNjK4qanq/q9qc= jenkins@ip-172-31-95-160' >>   /home/ubuntu/.ssh/authorized_keys
         EOF
 }
 
@@ -61,6 +61,6 @@ resource "aws_instance" "web-3" {
   user_data = <<-EOF
         #!/bin/bash
         sudo apt-get update
-        echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDp13RaAdC9OiSBrbbpMHWKXeMwMB/gSQNMyR+8xLMYnp+Q6Ad6tio6Psb4xoLvRJBwIebJ20ecqWrP1852eLvQaeRGRBYxw3hcUJaj+PBItsRYIRyQoXyOWSxy+RoRl4mURa982+bZ4q0uted7RFYoFOGqyWxOHhh/Cu3D0sOO0z2ACbpcCozIyUB4W0AueLcfmk+oMHOb33gfX150qs9QhASZ8yEvR7NcjoEp/kTQP5RX/oZEIuSQ8Z/euSx8L9poXBb6xQ9uNKj7wmea3NaIELCIrkQjKFVhHbSqERP2WdXGP0hmcwmUcKeuKEnuojIUiddP0z+EZL+8rrXMMUU7kCbDVa8ipE1YB6UB6K0XIOe4HrwWet/2UqPCyXArwhRAE9/UOgdl3H+f+VWDvzsIrNqm09CIB1wJnM0PmoYvYQZtV/b2I5UBg0ACMTFphPwNU9smT4bZcPI+Gw4kzAITV1BNl5+vK7vFySJYWjKKaypiz7DP7dflshet0WmZd+k= root@ip-172-31-28-151' >>   /home/ubuntu/.ssh/authorized_keys
+        echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8Q8qe81qeUu9Sqc8v+OsQAdFh2a2naw8Rua9pR/+rHVlflj6ipY2FssPhQFjA65ltXQ24DC+yT75UpxfjcWWiLpzIC3H3KOzE8BeskFhb3F3O/lZEfSejKBOUoYMcD/BbmsixoUbhhj3QfXvDsvn3TNFRM6Kvt6ISB1FT7GLY/DlwVLqSUM0db9JWiYY0ObrS3AlD8dI+P7QwkbK6JGnDIpmA2Eh/xRvxojp/vPC3PCHdOGgXa7JxdShHpJGrQXT57ItGAi4Ij2RQjSXhIyVrPylkaeXnRssYYyHKwrRuxZv/isGz8MXLvxNqdlrznKnEtzI9bu84VdwFAeyRns0cUC2MDNWzVqIhAj1HCJ9qjQ99R0btpqo/fE1EHV11j8tCKDiBJoG/lDiaKgtcwwY+8IntdMrgjbqWqPuuHOl6KLu2gJVkyoZzQN0dgNEy92lTTIoZ2n5QmCWJYIL5RBm8rWYjwZdLDlI8EMZ5O5sB0egLAlXDJNNjK4qanq/q9qc= jenkins@ip-172-31-95-160' >>   /home/ubuntu/.ssh/authorized_keys
         EOF
 }
